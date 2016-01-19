@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ScopeViewController">
+            <connections>
+                <outlet property="scopeView" destination="Hz6-mo-xeY" id="WUv-R5-sOB"/>
+                <outlet property="view" destination="eaa-nD-a9g" id="I0o-Y1-pgk"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="eaa-nD-a9g">
+            <rect key="frame" x="0.0" y="0.0" width="1004" height="627"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView id="Hz6-mo-xeY" customClass="METScopeView">
+                    <rect key="frame" x="20" y="63" width="964" height="544"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </customView>
+                <segmentedControl verticalHuggingPriority="750" id="dwC-Vf-AZk">
+                    <rect key="frame" x="414" y="18" width="177" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="rpd-wa-3NP">
+                        <font key="font" metaFont="system"/>
+                        <segments>
+                            <segment label="Time" width="85" selected="YES"/>
+                            <segment label="Frequency" width="85" tag="1"/>
+                        </segments>
+                    </segmentedCell>
+                    <connections>
+                        <action selector="domainChanged:" target="-2" id="BgR-jY-M6U"/>
+                    </connections>
+                </segmentedControl>
+                <button verticalHuggingPriority="750" id="iIM-8R-JCR">
+                    <rect key="frame" x="890" y="15" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Mute" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ns4-Sv-XOw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="muteButtonPressed:" target="-2" id="9lp-Ej-gLc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="493" y="7.5"/>
+        </customView>
+    </objects>
+</document>
