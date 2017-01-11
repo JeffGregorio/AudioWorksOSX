@@ -7,7 +7,7 @@ Audio visualizer app used for LiveConnections Bridge Session: Cybersounds in 201
 
 ## Usage notes ##
 * Requires multichannel audio interface (used 8-channel Tascam US-1800)
-  * Select interface under preferences menu (cmd + ,)
+  * Select the audio device under preferences menu (cmd + ,)
 * Scope has multiple modes
   * Time domain (multiple waveforms stacked vertically)
   * Frequency domain (multiple spectra overlaid in different colors)
